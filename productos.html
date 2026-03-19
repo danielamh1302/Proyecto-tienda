@@ -1,6 +1,162 @@
-<html><head><link rel="stylesheet" href="css/estilos.css"></head>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Shop</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
 <body>
-<h1>Productos</h1>
-<button onclick="agregarCarrito('Audifonos',1200)">Agregar</button>
+
+<header class="header">
+    <h1 class="logo">MINIMAL</h1>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="productos.html">Shop</a>
+        <a href="carrito.html">
+           Carrito (<span id="contador">0</span>)
+        </a>
+    </nav>
+</header>
+
+<main>
+
+<h2 class="titulo">Colección</h2>
+
+<div class="filtros">
+    <button onclick="filtrar('todos')">Todos</button>
+    <button onclick="filtrar('hombre')">Hombre</button>
+    <button onclick="filtrar('mujer')">Mujer</button>
+</div>
+
+<section class="productos">
+    <div class="grid-shop">
+
+        <div class="card" data-categoria="hombre">
+            <div class="img-container">
+                <img src="https://images.unsplash.com/photo-1598033129183-c4f50c736f10" loading="lazy">
+            </div>
+            <h3>Camisa Negra</h3>
+            <p>$299</p>
+            <button onclick="agregar('Camisa Negra',299)">Agregar</button>
+        </div>
+
+        <div class="card" data-categoria="mujer">
+            <div class="img-container">
+                <img src="https://images.unsplash.com/photo-1583496661160-fb5886a0aaaa" loading="lazy">
+            </div>
+            <h3>Falda Minimal</h3>
+            <p>$279</p>
+            <button onclick="agregar('Falda Minimal',279)">Agregar</button>
+        </div>
+
+        <div class="card" data-categoria="hombre">
+            <div class="img-container">
+                <img src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246" loading="lazy">
+            </div>
+            <h3>Jeans Slim</h3>
+            <p>$399</p>
+            <button onclick="agregar('Jeans Slim',399)">Agregar</button>
+        </div>
+
+        <div class="card" data-categoria="mujer">
+            <div class="img-container">
+                <img src="https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf" loading="lazy">
+            </div>
+            <h3>Sudadera Oversize</h3>
+            <p>$420</p>
+            <button onclick="agregar('Sudadera Oversize',420)">Agregar</button>
+        </div>
+
+        <div class="card" data-categoria="hombre">
+            <div class="img-container">
+                <img src="https://images.unsplash.com/photo-1516826957135-700dedea698c" loading="lazy">
+            </div>
+            <h3>Pantalón Casual</h3>
+            <p>$350</p>
+            <button onclick="agregar('Pantalón Casual',350)">Agregar</button>
+        </div>
+
+        <div class="card" data-categoria="mujer">
+            <div class="img-container">
+                <img src="https://images.unsplash.com/photo-1520975922284-9e0ce827e7c4" loading="lazy">
+            </div>
+            <h3>Top Básico</h3>
+            <p>$180</p>
+            <button onclick="agregar('Top Básico',180)">Agregar</button>
+        </div>
+
+        <div class="card" data-categoria="hombre">
+            <div class="img-container">
+                <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab" loading="lazy">
+            </div>
+            <h3>Playera Blanca</h3>
+            <p>$199</p>
+            <button onclick="agregar('Playera Blanca',199)">Agregar</button>
+        </div>
+
+        <div class="card" data-categoria="mujer">
+            <div class="img-container">
+                <img src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b" loading="lazy">
+            </div>
+            <h3>Blusa Beige</h3>
+            <p>$250</p>
+            <button onclick="agregar('Blusa Beige',250)">Agregar</button>
+        </div>
+
+        <div class="card" data-categoria="hombre">
+            <div class="img-container">
+                <img src="https://images.unsplash.com/photo-1556821840-3a63f95609a7" loading="lazy">
+            </div>
+            <h3>Hoodie Oversize</h3>
+            <p>$450</p>
+            <button onclick="agregar('Hoodie Oversize',450)">Agregar</button>
+        </div>
+
+        <div class="card" data-categoria="mujer">
+            <div class="img-container">
+                <img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c" loading="lazy">
+            </div>
+            <h3>Vestido Minimal</h3>
+            <p>$399</p>
+            <button onclick="agregar('Vestido Minimal',399)">Agregar</button>
+        </div>
+
+    </div>
+</section>
+
+</main>
+
+<footer class="footer">
+    <div class="footer-container">
+
+        <div class="footer-col">
+            <h3>MINIMAL</h3>
+            <p>Estilo simple, elegante y moderno.</p>
+        </div>
+
+        <div class="footer-col">
+            <h4>Enlaces</h4>
+            <a href="index.html">Inicio</a>
+            <a href="productos.html">Shop</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="perfil.html">Perfil</a>
+        </div>
+
+        <div class="footer-col">
+            <h4>Contacto</h4>
+            <p>Email: minimal@store.com</p>
+            <p>Tel: +52 123 456 7890</p>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 Minimal Store</p>
+    </div>
+</footer>
+
 <script src="js/script.js"></script>
-</body></html>
+
+</body>
+</html>
+   

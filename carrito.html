@@ -1,6 +1,46 @@
-<html><body>
-<h1>Carrito</h1>
-<div id="carrito"></div>
-<button onclick="pagar()">Pagar</button>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Carrito</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+<header class="header">
+    <h1 class="logo">MINIMAL</h1>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="productos.html">Shop</a>
+        <a href="carrito.html">Carrito</a>
+    </nav>
+</header>
+
+<main>
+
+<h2 class="titulo">Tu Carrito</h2>
+
+<section class="carrito-container">
+
+    <div id="carrito" class="lista-carrito"></div>
+
+    <div class="resumen">
+        <h3>Total</h3>
+        <p id="total">$0</p>
+        <button onclick="vaciarCarrito()">Vaciar carrito</button>
+    </div>
+
+</section>
+
+</main>
+
+<footer class="footer">
+    <div class="footer-bottom">
+        <p>© 2026 Minimal Store</p>
+    </div>
+</footer>
+
 <script src="js/script.js"></script>
-</body></html>
+
+</body>
+</html>

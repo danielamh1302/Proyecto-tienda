@@ -1,11 +1,116 @@
 <!DOCTYPE html>
-<html><head><title>Tienda</title><link rel="stylesheet" href="css/estilos.css"></head>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Minimal Store</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
 <body>
-<h1>Tienda de Audífonos</h1>
-<nav>
-<a href="index.html">Inicio</a>
-<a href="productos.html">Productos</a>
-<a href="carrito.html">Carrito</a>
-</nav>
-<img src="img/producto1.jpg" width="200">
-</body></html>
+
+<header class="header">
+    <h1 class="logo">MINIMAL</h1>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="productos.html">Shop</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="perfil.html">Perfil</a>
+        <a href="carrito.html">Carrito (<span id="contador">0</span>)</a>
+    </nav>
+</header>
+
+<main>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="overlay">
+        <h2>Nueva Colección</h2>
+        <p>Minimalismo que define tu estilo</p>
+        
+    </div>
+</section>
+
+<!-- BLOQUES -->
+<section class="bloque">
+    <div class="imagen-texto">
+        <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d" alt="Minimal outfit" loading="lazy">
+        <div class="texto">
+            <h2>Estilo Diario</h2>
+            <p>Comodidad y elegancia en cada prenda</p>
+        </div>
+    </div>
+</section>
+
+<section class="bloque">
+    <div class="imagen-texto reverse">
+        <img src="https://images.unsplash.com/photo-1521334884684-d80222895322" alt="Colores neutros" loading="lazy">
+        <div class="texto">
+            <h2>Colores Neutros</h2>
+            <p>Menos es más</p>
+        </div>
+    </div>
+</section>
+
+<!-- PRODUCTOS -->
+<section class="destacados">
+    <h2 class="titulo">Productos Destacados</h2>
+
+    <div class="grid">
+
+        <div class="card">
+            <div class="img-container">
+            <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab" loading="lazy">
+            </div>
+            <h3>Playera Blanca</h3>
+            <p>$199</p>
+            <button onclick="agregar('Playera Blanca',199)">Agregar</button>
+        </div>
+
+        <div class="card">
+            <div class="img-container">
+                <img src="https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf" loading="lazy">
+            </div>
+            <h3>Hoodie Beige</h3>
+            <p>$450</p>
+            <button onclick="agregar('Hoodie Beige',450)">Agregar</button>
+        </div>
+
+    </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="footer-container">
+
+        <div class="footer-col">
+            <h3>MINIMAL</h3>
+            <p>Estilo simple, elegante y moderno.</p>
+        </div>
+
+        <div class="footer-col">
+            <h4>Enlaces</h4>
+            <a href="index.html">Inicio</a>
+            <a href="productos.html">Shop</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="perfil.html">Perfil</a>
+        </div>
+
+        <div class="footer-col">
+            <h4>Contacto</h4>
+            <p>Email: minimal@store.com</p>
+            <p>Tel: +52 123 456 7890</p>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 Minimal Store</p>
+    </div>
+</footer>
+
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
